@@ -63,6 +63,13 @@ if __name__ == '__main__':
     import sys
     from cadencement_cle import cadencement_cle
 
+    if len(sys.argv) < 2:
+        print("Deux arguments sont nécessaires :")
+        print(" - Le chiffré en hexadecimal (precedé ou non de 0x)")
+        print(" - La clé en hexadecimal (precedé ou non de 0x)")
+        print("exemple : python3 dechiffrement.py 0xaf34e 32c")
+        exit(1)
+
     # recuperation du message chiffré et de la clé donnés en argument par l'utilisateur
     chiffre = int(sys.argv[1], 16)
     cle = int(sys.argv[2], 16)

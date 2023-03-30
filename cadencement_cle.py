@@ -1,22 +1,24 @@
+#################################################
+## Cadencement de cle à partir d'un clé maitre ##
+#################################################
+
 try:
-    from numba import njit
+    from numba import njit, int32
 except ImportError:
     print("numba module not installed: pip install numba")
     exit(-1)
 
 @njit
 def cadencement_cle(cle_maitre):
-    """docstring""" 
+    """creation des sous cles a partir de la cle maitre"""
     boite_s = [12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2]
     # on cree le registre k en deplaçant la cle vers les bits de poids fort 
     k = [cle_maitre << 16, 0]
     
     sous_cles = [0]
-    for i in range(1,11):
+    for i in range(1, 11):
         # on met a jour le registre
         # 1ere etape : pivotement de 61 positions vers la gauche 
-        # [k79k78...k40][k39...k1k0]
-        # [k18k17...k59][k58...k20k19]
         x = k[1] << 21 | k[0] >> 19
         y = k[0] << 21 | k[1] >> 19
         k[0] = x & 0xffffffffff
