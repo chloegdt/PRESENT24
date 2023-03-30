@@ -80,22 +80,24 @@ Enfin, la durée entière de l'attaque vous sera fournie.
 
 ```pyhton3 attaque.py -c```
 
-\> Début de l'attaque avec le message clair : 0x4efbd3 et le chiffré : 0x9c45fa\n
-Création des listes...\n
-[#################]\n
-Listes crées en 7.392288446426392 secondes.\n
+```
+\> Début de l'attaque avec le message clair : 0x4efbd3 et le chiffré : 0x9c45fa
+Création des listes...
+[#################]
+Listes crées en 7.392288446426392 secondes.
 
-Liste_m triée en 3.6093602180480957 secondes.\n
-Liste_c triée en 3.5849967002868652 secondes.\n
+Liste_m triée en 3.6093602180480957 secondes.
+Liste_c triée en 3.5849967002868652 secondes.
 
-Suite de l'attaque avec le message clair : 0xfdd4e0 et le chiffré : 0x4ae29b\n
-Recherche et test des elements communs entre les deux listes...\n
-[#################]\n
-16782676 elements communs trouvés et testés en 10.273966550827026 secondes.\n
+Suite de l'attaque avec le message clair : 0xfdd4e0 et le chiffré : 0x4ae29b
+Recherche et test des elements communs entre les deux listes...
+[#################]
+16782676 elements communs trouvés et testés en 10.273966550827026 secondes.
 
-1 couple(s) de clés trouvé(s) :\n
-k1 = 0x673e22 | k2 = 0xae673a\n
-Attaque terminée en 24.862444400787354 secondes.\n
+1 couple(s) de clés trouvé(s) :
+k1 = 0x673e22 | k2 = 0xae673a
+Attaque terminée en 24.862444400787354 secondes.
+```
 
 ### Test
 Afin de tester le bon fonctionnement de nos fonctions cadencement_cle, chiffrement, dechiffrement, nous avons créé un fichier test.
