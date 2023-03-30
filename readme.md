@@ -36,8 +36,10 @@ Il s'affichera alors dans le terminal un message contenant le chiffré.
 
 ```pyhton3 chiffrement.py 0x0 b3d5e6```
 
-```> Chiffrement PRESENT24 du message clair 000000 avec la clé b3d5e6
-Le chiffré est 3fa671.```
+```
+> Chiffrement PRESENT24 du message clair 000000 avec la clé b3d5e6
+Le chiffré est 3fa671.
+```
 
 
 ### Déchiffrement
@@ -50,8 +52,10 @@ Il s'affichera alors dans le terminal un message contenant le message déchiffr�
 
 ```pyhton3 dechiffrement.py 3fa671 b3d5e6```
 
-```> Déhiffrement PRESENT24 du message chiffré 3fa671 avec la clé b3d5e6
-Le message clair est 000000.```
+```
+> Déhiffrement PRESENT24 du message chiffré 3fa671 avec la clé b3d5e6
+Le message clair est 000000.
+```
 
 ### Attaque
 Pour réaliser une attaque 'Meet in the Middle', il sera nécessaire de fournir deux couples clair-chiffré. 
@@ -81,7 +85,7 @@ Enfin, la durée entière de l'attaque vous sera fournie.
 ```pyhton3 attaque.py -c```
 
 ```
-\> Début de l'attaque avec le message clair : 0x4efbd3 et le chiffré : 0x9c45fa
+> Début de l'attaque avec le message clair : 0x4efbd3 et le chiffré : 0x9c45fa
 Création des listes...
 [#################]
 Listes crées en 7.392288446426392 secondes.
