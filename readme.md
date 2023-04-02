@@ -149,7 +149,7 @@ Nous avons donc cherché à le rendre plus rapide et moins gourmand en mémoire.
 Nous avons pris la décision, une fois un élément commun trouvé entre les deux listes Lm et Lc, de tester le couple de clés candidates correspondantes immédiatement (avec le deuxième couple clair-chiffré). Ainsi, nous ne gardons plus les éléments en communs trouvés (sachant que nous avions plus de 16 780 000 collisions). Nous nous contentons de les compter et de stocker uniquement les couples de clés qui fonctionnent. 
 
 #### Réduction du temps d'exécution
-Si de cette façon nous avons largement soulagé la RAM, il était aussi important de gagner en temps. Nous avons importer le module numba permettant de compiler notre code. 
+Si de cette façon nous avons largement soulagé la RAM, il était aussi important de gagner en temps. Nous avons importé le module numba permettant de compiler notre code. 
 C'est pourquoi, dans nos fonctions, un décorateur @njit est présent. 
 
 Avec ce module, le temps d'exécution de notre programme est passé de 32 minutes à une minute. 
